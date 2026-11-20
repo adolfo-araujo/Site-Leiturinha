@@ -1,0 +1,2 @@
+# Impede acesso HTTP direto a arquivos de configuração no Apache.
+Require all denied

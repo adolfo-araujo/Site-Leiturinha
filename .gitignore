@@ -1,0 +1,39 @@
+# Senhas e configurações locais
+.env
+.env.*
+!.env.example
+/config/database.local.php
+/config/*.local.php
+/config/*.secret.php
+*.pem
+*.key
+
+# Dependências e caches
+/vendor/
+/node_modules/
+/.phpunit.cache/
+/coverage/
+
+# IDE e sistema operacional
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Logs, temporários e backups
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+*.zip
+
+# Dados de produção e cópias de bancos
+*.sqlite
+*.sqlite3
+*.sql.gz
+*.sql.zip

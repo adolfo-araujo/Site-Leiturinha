@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leiturinha</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="../index.php" class="logo">📖 Leiturinha</a>
+
+    <div class="busca-area">
+      <input type="text" id="busca" placeholder="Pesquisar livro...">
+      <button onclick="pesquisarLivro()">🔍</button>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="../index.php">Home</a>
+    <a href="../favoritos.php">Favoritos</a>
+    <a href="#marca">Sobre</a>
+    <a href="../contato.html">Contato</a>
+  </nav>
+
+  <section class="faixa-cinza"></section>
+
+  <section class="hero">
+    <div class="hero-img"></div>
+
+    <div class="hero-texto">
+      <h1>Bem-vindo à nossa<br>loja de leitura!</h1>
+
+      <div class="caixa-frase">
+        Ler é um hábito poderoso que estimula a imaginação, melhora a escrita,
+        amplia o vocabulário e ajuda a relaxar. Além de ensinar, a leitura nos
+        faz entender melhor o mundo e as pessoas ao nosso redor.
+      </div>
+    </div>
+  </section>
+
+  <section class="titulo-secao">
+    <p>Top 6 Romances para se Apaixonar:</p>
+  </section>
+
+  <section class="lista-livros">
+    <div class="livro-card">
+      <img src="https://m.media-amazon.com/images/I/81LTEfXYgcL.jpg" alt="A Hipótese do Amor">
+      <h3>A Hipótese do Amor</h3>
+      <p>Ali Hazelwood</p>
+      <div class="acoes-card">
+        <a href="produto1.html">Ver mais</a>
+        <button onclick="adicionarFavorito('A Hipótese do Amor')">♡</button>
+      </div>
+    </div>
+
+    <div class="livro-card">
+      <img src="https://m.media-amazon.com/images/I/71SliYa-JkL.jpg" alt="Uma Farsa de Amor">
+      <h3>Uma Farsa de Amor</h3>
+      <p>Elena Armas</p>
+      <div class="acoes-card">
+        <a href="produto2.html">Ver mais</a>
+        <button onclick="adicionarFavorito('Uma Farsa de Amor')">♡</button>
+      </div>
+    </div>
+
+    <div class="livro-card">
+      <img src="https://m.media-amazon.com/images/I/81Q11TuUR3L.jpg" alt="A Cinco Passos de Você">
+      <h3>A Cinco Passos de Você</h3>
+      <p>Rachel Lippincott</p>
+      <div class="acoes-card">
+        <a href="produto3.html">Ver mais</a>
+        <button onclick="adicionarFavorito('A Cinco Passos de Você')">♡</button>
+      </div>
+    </div>
+
+    <div class="livro-card">
+      <img src="https://m.media-amazon.com/images/I/81gOkEhzgIL._UF1000,1000_QL80_.jpg" alt="Orgulho e Preconceito">
+      <h3>Orgulho e Preconceito</h3>
+      <p>Jane Austen</p>
+      <div class="acoes-card">
+        <a href="produto4.html">Ver mais</a>
+        <button onclick="adicionarFavorito('Orgulho e Preconceito')">♡</button>
+      </div>
+    </div>
+
+    <div class="livro-card">
+      <img src="https://m.media-amazon.com/images/I/81WKPIFKThL.jpg" alt="Sombra e Ossos">
+      <h3>Sombra e Ossos</h3>
+      <p>Leigh Bardugo</p>
+      <div class="acoes-card">
+        <a href="produto5.html">Ver mais</a>
+        <button onclick="adicionarFavorito('Sombra e Ossos')">♡</button>
+      </div>
+    </div>
+
+    <div class="livro-card">
+      <img src="https://m.media-amazon.com/images/I/81d6ESyPZwL.jpg" alt="Harry Potter e a Ordem da Fênix">
+      <h3>Harry Potter e a Ordem da Fênix</h3>
+      <p>J. K. Rowling</p>
+      <div class="acoes-card">
+        <a href="produto6.html">Ver mais</a>
+        <button onclick="adicionarFavorito('Harry Potter e a Ordem da Fênix')">♡</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="grandes-estrelas">
+    <div class="frases">
+      <h2>GRANDES ESTRELAS DA LEITURA</h2>
+
+      <div class="frase-box">“Ler é sonhar pela mão do autor.”<br>— Fernando Pessoa</div>
+      <div class="frase-box">“A leitura é uma outra maneira de estar em um lugar.”<br>— José Saramago</div>
+      <div class="frase-box">“O livro é um bom amigo.”<br>— André Maurois</div>
+    </div>
+
+    <div class="autores">
+      <div class="autor-img">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pessoa_chapeu.jpg/250px-Pessoa_chapeu.jpg" alt="Autor 1">
+     </div>
+      <div class="autor-img">
+        <img src="https://cdl-static.s3-sa-east-1.amazonaws.com/colaboradores/00445_gg.jpg" alt="Autor 2">
+      </div>
+      <div class="autor-img">
+       <img src="https://fantastic-writers-and-the-great-war.com/wp-content/uploads/2014/03/andre-maurois-in-uniform.jpg" alt="Autor 3">
+      </div>
+    </div>
+
+    <div class="imagem-destaque"></div>
+  </section>
+
+  <section class="marca" id="marca">
+    <div class="texto-marca">
+      <h2>A História por Trás da Marca</h2>
+      <p>
+        Tudo começou com uma paixão simples: o amor pelos livros. Desde pequena,
+        nossa fundadora se encantava com o poder que as histórias tinham de
+        transportar pessoas para outros mundos, de ensinar, emocionar e transformar vidas.
+      </p>
+      <p>
+        Assim nasceu a ideia de criar um espaço onde livros de todos os tipos
+        pudessem encontrar novos leitores.
+      </p>
+      <p>
+        Aqui, cada página é uma promessa de aventura, cada autor uma estrela,
+        e cada leitor, um explorador do conhecimento.
+      </p>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <a class="btn-contato" href="../contato.html">Fale conosco</a>
+    <div class="redes">
+      <span>🐦</span>
+      <span>📷</span>
+      <span>✈️</span>
+      <span>📘</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

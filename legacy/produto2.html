@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uma Farsa de Amor</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="topo">
+  <a href="../index.php" class="logo">📖 Leiturinha</a>
+  <div class="busca-area">
+    <input type="text" id="busca" placeholder="Pesquisar livro...">
+    <button onclick="pesquisarLivro()">🔍</button>
+  </div>
+</header>
+
+<nav class="menu">
+  <a href="../index.php">Home</a>
+  <a href="../favoritos.php">Favoritos</a>
+  <a href="../contato.html">Contato</a>
+</nav>
+
+<section class="faixa-cinza"></section>
+
+<section class="produto-pagina">
+  <div class="produto-img">
+    <img src="https://m.media-amazon.com/images/I/71SliYa-JkL.jpg" alt="Uma Farsa de Amor">
+  </div>
+
+  <div class="produto-info sem-preco">
+    <h1>Uma Farsa De Amor</h1>
+    <h2>De Elena Armas</h2>
+    <div class="tipos">
+      <span>Livro</span>
+      <span>Ebook</span>
+    </div>
+    <p class="mini-info">editora: Arqueiro, agosto de 2022 - ver detalhes do produto</p>
+    <p class="avaliacao">☆☆☆☆☆ avaliação dos leitores (25 Comentários)</p>
+
+    <div class="botoes-livro">
+      <button onclick="adicionarFavorito('Uma Farsa de Amor')">Adicionar aos favoritos</button>
+      <a href="../index.php">Voltar para home</a>
+    </div>
+  </div>
+</section>
+
+<section class="sinopse-area">
+  <h2>Sinopse</h2>
+  <div class="sinopse-box">
+    É um romance que narra a história de Catalina Martín, uma jovem engenheira
+    que precisa de um acompanhante para o casamento da irmã na Espanha.
+  </div>
+</section>
+
+<footer class="rodape simples">
+  <a class="btn-contato" href="../contato.html">Fale conosco</a>
+</footer>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

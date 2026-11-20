@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Cinco Passos de Você</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="topo">
+  <a href="../index.php" class="logo">📖 Leiturinha</a>
+  <div class="busca-area">
+    <input type="text" id="busca" placeholder="Pesquisar livro...">
+    <button onclick="pesquisarLivro()">🔍</button>
+  </div>
+</header>
+
+<nav class="menu">
+  <a href="../index.php">Home</a>
+  <a href="../favoritos.php">Favoritos</a>
+  <a href="../contato.html">Contato</a>
+</nav>
+
+<section class="faixa-cinza"></section>
+
+<section class="produto-pagina">
+  <div class="produto-img">
+    <img src="https://m.media-amazon.com/images/I/81Q11TuUR3L.jpg" alt="A Cinco Passos de Você">
+  </div>
+
+  <div class="produto-info sem-preco">
+    <h1>A Cinco Passos De Você</h1>
+    <h2>De Rachel Lippincott</h2>
+    <div class="tipos">
+      <span>Livro</span>
+      <span>Ebook</span>
+    </div>
+    <p class="mini-info">editora: Desrotina, março de 2022 - ver detalhes do produto</p>
+    <p class="avaliacao">☆☆☆☆☆ avaliação dos leitores (26 Comentários)</p>
+
+    <div class="botoes-livro">
+      <button onclick="adicionarFavorito('A Cinco Passos de Você')">Adicionar aos favoritos</button>
+      <a href="../index.php">Voltar para home</a>
+    </div>
+  </div>
+</section>
+
+<section class="sinopse-area">
+  <h2>Sinopse</h2>
+  <div class="sinopse-box">
+    Stella e Will, dois jovens que são portadores de fibrose cística, se apaixonam,
+    mas precisam viver com distância física e muitos limites.
+  </div>
+</section>
+
+<footer class="rodape simples">
+  <a class="btn-contato" href="../contato.html">Fale conosco</a>
+</footer>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale conosco</title>
+
+  <link rel="stylesheet" href="assets/css/style.css?v=20">
+</head>
+<body>
+
+<header class="topo">
+  <a href="index.php" class="logo">📖 Leiturinha</a>
+</header>
+
+<nav class="menu">
+  <a href="index.php">Home</a>
+  <a href="favoritos.php">Favoritos</a>
+  <a href="contato.html">Contato</a>
+</nav>
+
+<section class="faixa-cinza alto"></section>
+
+<section class="contato-pagina">
+  <h1>Fale conosco</h1>
+
+  <div class="contato-info">
+    <div>📞 (69) 98888-9988</div>
+    <div>✉️ leiturinha@gmail.com</div>
+  </div>
+
+  <form class="formulario" id="formContato" action="contato.php" method="post">
+    <input 
+      type="text" 
+      id="nomeContato" 
+      name="nome" 
+      placeholder="Seu nome" 
+      required
+    >
+
+    <input 
+      type="email" 
+      id="emailContato" 
+      name="email" 
+      placeholder="Seu e-mail" 
+      required
+    >
+
+    <textarea 
+      id="mensagemContato" 
+      name="mensagem" 
+      placeholder="Digite sua mensagem" 
+      required
+    ></textarea>
+
+    <button type="submit">Enviar</button>
+
+    <p id="msgContato"></p>
+  </form>
+</section>
+
+<footer class="rodape">
+  <a class="btn-contato" href="index.php">Voltar para home</a>
+
+  <div class="redes">
+    <span>🐦</span>
+    <span>📷</span>
+    <span>✈️</span>
+    <span>📘</span>
+  </div>
+</footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get("status");
+  const msgContato = document.getElementById("msgContato");
+
+  if(status === "sucesso"){
+    msgContato.style.color = "green";
+    msgContato.innerText = "Mensagem enviada com sucesso!";
+  }
+
+  if(status === "erro"){
+    msgContato.style.color = "#b30000";
+    msgContato.innerText = "Erro: preencha todos os campos.";
+  }
+</script>
+
+</body>
+</html>
